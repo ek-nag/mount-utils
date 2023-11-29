@@ -1,6 +1,6 @@
 // This is a generated file. Do not edit directly.
 
-module k8s.io/mount-utils
+module github.com/ek-nag/mount-utils
 
 go 1.21
 
