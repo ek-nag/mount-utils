@@ -137,6 +137,7 @@ func (mounter *Mounter) MountSensitive(source string, target string, fstype stri
 		"glusterfs": {},
 		"ceph":      {},
 		"cifs":      {},
+		"lustre":      {},
 	}
 	if _, ok := fsTypesNeedMounter[fstype]; ok {
 		mounterPath = mounter.mounterPath
@@ -166,6 +167,7 @@ func (mounter *Mounter) MountSensitiveWithoutSystemdWithMountFlags(source string
 		"glusterfs": {},
 		"ceph":      {},
 		"cifs":      {},
+		"lustre":      {},
 	}
 	if _, ok := fsTypesNeedMounter[fstype]; ok {
 		mounterPath = mounter.mounterPath
